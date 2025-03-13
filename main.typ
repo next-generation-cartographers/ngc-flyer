@@ -6,7 +6,7 @@
 #let card_height = height / 4
 
 #set page(width: width, height: height, margin: 0mm)
-#set text(font: "Source Sans Pro")
+#set text(font: "Source Sans 3")
 
 #let card() = {
   rect(
