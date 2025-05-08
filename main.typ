@@ -1,4 +1,4 @@
-#import "@preview/cades:0.3.0": qr-code
+#import "@preview/tiaoma:0.3.0"
 
 #let width = 210mm
 #let height = 297mm
@@ -21,13 +21,11 @@
         {
           image("Links/ngc-rgb-logotype-black.svg", width: card_width / 3)
           v(3em)
-          qr-code("https://next-generation-cartographers.github.io/", width: 1.25cm)
+          tiaoma.barcode("https://next-generation-cartographers.github.io/", "QRCode", width: 1.25cm, height: 1.25cm)
           place(
             left + bottom,
             dx: 2cm,
-            box(
-              width: card_width / 1.5,
-            )[
+            box(width: card_width / 1.5)[
               A welcoming space for the next generation of cartographers to share work, find
               inspiration, and connect with each other.
             ],
